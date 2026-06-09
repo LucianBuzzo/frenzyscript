@@ -11,7 +11,7 @@ const isNode = (el) => {
 }
 
 const has = (object, key) => {
-	return object.hasOwnProperty(key)
+	return Object.prototype.hasOwnProperty.call(object, key)
 }
 
 const mapObject = (object, fn) => {
